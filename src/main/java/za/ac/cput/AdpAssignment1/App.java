@@ -15,23 +15,33 @@ public class App
         this.number = number;
     }
 
-    public String getData() {
+    public String getData()
+    {
         return data;
     }
 
-    public void setData(String data) {
+    public void setData(String data)
+    {
         this.data = data;
     }
 
-    public int getNumber() {
+    public int getNumber()
+    {
         return number;
     }
 
-    public void setNumber(int number) {
+    public void setNumber(int number)
+    {
         this.number = number;
     }
 
-    public static void main( String[] args )
+    @Override
+    public String toString()
+    {
+        return "App{" + "data='" + data + '\'' + ", number=" + number + '}';
+    }
+
+    public static void main(String[] args )
     {
         System.out.println( "Hello World!" );
 
