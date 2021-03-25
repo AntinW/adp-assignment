@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /**@author 219088470
  * Unit test for simple App.
  */
-public class AppTest 
+public class AppTest
 {
     /**
      * Rigorous Test :-)
@@ -41,10 +41,10 @@ public class AppTest
 
     }
 
-    @Test
+    @Test(timeout = 10)
     public void testTimeout()
     {
-
+        assertNotSame(app_old, app_new);
     }
 
     @Test
