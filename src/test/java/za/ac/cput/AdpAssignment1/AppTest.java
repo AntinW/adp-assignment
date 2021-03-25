@@ -1,7 +1,9 @@
 package za.ac.cput.AdpAssignment1;
 
+import org.junit.Ignore;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -41,16 +43,18 @@ public class AppTest
 
     }
 
-    @Test(timeout = 10)
+    @Test
+    @Timeout(100)
     public void testTimeout()
     {
         assertNotSame(app_old, app_new);
     }
 
+    @Ignore
     @Test
-    void disablingTest()
+    public void disablingTest()
     {
-
+        assertNull(app_old);
     }
 
 }
