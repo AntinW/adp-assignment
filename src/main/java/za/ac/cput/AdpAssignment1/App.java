@@ -9,6 +9,11 @@ public class App
     private String data;
     private int number;
 
+    public App()
+    {
+
+    }
+
     public App(String data, int number)
     {
         this.data = data;
