@@ -15,8 +15,25 @@ public class App
         this.number = number;
     }
 
+    public String getData() {
+        return data;
+    }
+
+    public void setData(String data) {
+        this.data = data;
+    }
+
+    public int getNumber() {
+        return number;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
+    }
+
     public static void main( String[] args )
     {
         System.out.println( "Hello World!" );
+
     }
 }
