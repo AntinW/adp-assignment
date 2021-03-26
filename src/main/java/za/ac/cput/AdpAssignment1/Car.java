@@ -1,5 +1,10 @@
 package za.ac.cput.AdpAssignment1;
 
+/**
+ * @Author: Tye Walker
+ * Car.java with Getters, Setters, and toString
+ */
+
 public class Car {
 
     private String make, model;
