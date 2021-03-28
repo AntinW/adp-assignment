@@ -1,5 +1,8 @@
 package za.ac.cput.AdpAssignment1;
-
+/*
+ * @author Antin Micheal Williams
+ * Student number: 219212058
+ */
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 
