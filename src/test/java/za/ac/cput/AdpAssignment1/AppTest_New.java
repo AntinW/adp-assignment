@@ -31,7 +31,8 @@ class AppTest_New
     @Test
     void testIdentity()
     {
-        assertSame(app_old, app_new);
+        assertSame(app_old, app_compare);
+        assertNotSame(app_old, app_new);
     }
 
     @Test
