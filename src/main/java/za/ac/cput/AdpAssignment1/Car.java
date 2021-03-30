@@ -1,8 +1,8 @@
 package za.ac.cput.AdpAssignment1;
 
 /**
- * @Author: Tye Walker
- * Car.java with Getters, Setters, and toString
+ * @Author: Tye Walker - 218338562
+ * Car.java with Getters, Setters, and toString.
  */
 
 public class Car {
