@@ -19,7 +19,7 @@ class DVDTest {
 
     @Test
     void testEquality() {
-        assertEquals(dvd1, dvd2 );
+        assertEquals(dvd1, dvd2);
 
     }
 
