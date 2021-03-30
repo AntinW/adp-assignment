@@ -1,5 +1,10 @@
 package za.ac.cput.AdpAssignment1;
 
+/**
+ * Author: Tauriq-Allie Wilkinsob
+ * Subject: ADP372S
+ * Student No.: 219071330
+ */
 public class Horse {
 
     private String name,color;
@@ -55,6 +60,7 @@ public class Horse {
         this.color = color;
     }
 
+
     public void setAge(int age) {
         this.age = age;
     }
@@ -67,5 +73,14 @@ public class Horse {
         this.height = height;
     }
 
-    
+    @Override
+    public String toString() {
+        return "Horse{" +
+                "name='" + name + '\'' +
+                ", color='" + color + '\'' +
+                ", age=" + age +
+                ", weight=" + weight +
+                ", height=" + height +
+                '}';
+    }
 }
