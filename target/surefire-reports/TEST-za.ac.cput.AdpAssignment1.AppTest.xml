@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="za.ac.cput.AdpAssignment1.StudentTest" time="0.229" tests="5" errors="0" skipped="1" failures="2">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="za.ac.cput.AdpAssignment1.AppTest" time="0.121" tests="4" errors="0" skipped="0" failures="2">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -61,24 +61,16 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="testTimeout" classname="za.ac.cput.AdpAssignment1.StudentTest" time="0.214"/>
-  <testcase name="testFail" classname="za.ac.cput.AdpAssignment1.StudentTest" time="0">
-    <failure message="This test fails because this test fails" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: This test fails because this test fails
-	at za.ac.cput.AdpAssignment1.StudentTest.testFail(StudentTest.java:30)
-</failure>
-  </testcase>
-  <testcase name="testDisabling" classname="za.ac.cput.AdpAssignment1.StudentTest" time="0">
-    <skipped message="public void za.ac.cput.AdpAssignment1.StudentTest.testDisabling() is @Disabled"/>
-  </testcase>
-  <testcase name="testIdentity" classname="za.ac.cput.AdpAssignment1.StudentTest" time="0"/>
-  <testcase name="testEquality" classname="za.ac.cput.AdpAssignment1.StudentTest" time="0.01">
-    <failure message="expected: za.ac.cput.AdpAssignment1.Student@11bd0f3b&lt;Student{&#10;studName = null&#10;studNum = 0}&gt; but was: za.ac.cput.AdpAssignment1.Student@c333c60&lt;Student{&#10;studName = null&#10;studNum = 0}&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
-expected: za.ac.cput.AdpAssignment1.Student@11bd0f3b<Student{
-studName = null
-studNum = 0}> but was: za.ac.cput.AdpAssignment1.Student@c333c60<Student{
-studName = null
-studNum = 0}>
-	at za.ac.cput.AdpAssignment1.StudentTest.testEquality(StudentTest.java:20)
+  <testcase name="testTimeout" classname="za.ac.cput.AdpAssignment1.AppTest" time="0.081"/>
+  <testcase name="disablingTest" classname="za.ac.cput.AdpAssignment1.AppTest" time="0.03">
+    <failure message="expected null, but was:&lt;App{data=&apos;null&apos;, number=0}&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected null, but was:<App{data='null', number=0}>
+	at za.ac.cput.AdpAssignment1.AppTest.disablingTest(AppTest.java:64)
 ]]></failure>
   </testcase>
+  <testcase name="testIdentity" classname="za.ac.cput.AdpAssignment1.AppTest" time="0">
+    <failure message="expected same:&lt;App{data=&apos;null&apos;, number=0}&gt; was not:&lt;App{data=&apos;null&apos;, number=0}&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected same:<App{data='null', number=0}> was not:<App{data='null', number=0}>
+	at za.ac.cput.AdpAssignment1.AppTest.testIdentity(AppTest.java:38)
+]]></failure>
+  </testcase>
+  <testcase name="testEquality" classname="za.ac.cput.AdpAssignment1.AppTest" time="0"/>
 </testsuite>

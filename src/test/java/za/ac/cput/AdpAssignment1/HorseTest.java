@@ -1,5 +1,11 @@
 package za.ac.cput.AdpAssignment1;
 
+/**
+ * Author: Tauriq-Allie Wilkinsob
+ *  * Subject: ADP372S
+ *  * Student No.: 219071330
+ */
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -18,46 +24,45 @@ class HorseTest {
         horse2 = new Horse();
         horse3 = horse1;
     }
-    /**
-     * i. Object Equality
-     */
+
+     //i. Object Equality
+
     @Test
     void testEquality() {
         assertEquals(horse1,horse3);
     }
 
-    /**
-     * ii. Object Identity
-     */
+
+     // ii. Object Identity
+
     @Test
     void testIdentity() {
         assertSame(horse3, horse1);
     }
 
-    /**
-     * iii. Failing Test:
-     */
+
+     // iii. Failing Test
+
     @Test
-    void testFailing()  { fail("Failed.");
+    void testFailing()  {
+        fail(" Failed!!!!!!!!!!!");
     }
 
-    /**
-     * iv. Timeouts
-     */
+
+   // iv. Timeouts
+
     @Test
     @Timeout(10)
     void testTimeout() throws InterruptedException {
-        Thread.sleep(5000);                         //Waits 5 seconds (5000 milliseconds)
+        Thread.sleep(200);                         //Waits 5 seconds (5000 milliseconds)
         System.out.println(" Test Passed");
     }
 
-    /**
-     * v. Disabling Test
-     */
-    @Disabled("This is an example of a disabled/ignored method")
+    //v. Disabling Test
+    @Disabled
     @Test
     void testDisabling() {
-        assertEquals(10+20, 15+15);
+        System.out.println("This test is disabled");
     }
 
 }
