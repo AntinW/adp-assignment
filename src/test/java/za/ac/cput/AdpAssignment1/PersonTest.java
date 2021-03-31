@@ -7,7 +7,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;
-import org.junit.jupiter.api.condition.DisabledIf;
 
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -15,52 +14,52 @@ import static org.junit.jupiter.api.Assertions.*;
 /**
  *
  * @author : Robin White 218034555
- * Unit test for simple App.
+ * Unit test for simple Person.
  */
-public class AppTest
+public class PersonTest
 {
     /**
      * Rigorous Test :-)
      */
 
-   private App app1;
-   private App app2;
-   private App app3;
+   private Person p1;
+   private Person p2;
+   private Person p3;
 
 
 
    @BeforeEach
     void setUp(){
-       app1 = new App();
-       app2 = new App();
-       app3 = app1;
+       p1 = new Person();
+       p2 = new Person();
+       p3 = p1;
 
    }
 
    //Equality Test
    @Test
    void testEquality(){
-       assertEquals(app1, app3);
+       assertEquals(p1, p3);
    }
 
    //Identity Test
    @Test
     void testIdentity(){
-       assertSame(app1 , app1);
+       assertSame(p1 , p1);
    }
 
    //Failing Test
    @Test
      void testFail(){
-       if(app1 != app2){
+       if(p1 != p2){
            fail("This Test has failed");
        }
    }
 
    //Disable Test
-    @Disabled("Test was DISABLED")
-    @Test
-     void testDisable(){
+   @Disabled("Test was DISABLED")
+   @Test
+   void testDisable(){
        assertEquals(10, 9+1);
    }
 
