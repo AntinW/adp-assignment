@@ -17,7 +17,7 @@ class StudentTest {
 //    Object Equality
     @Test
     public void testEquality(){
-        assertEquals(student1, student2);
+        assertEquals(student1, student3);
     }
 //    Object Identity
     @Test
