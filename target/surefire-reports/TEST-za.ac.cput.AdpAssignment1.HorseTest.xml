@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="za.ac.cput.AdpAssignment1.HorseTest" time="4.929" tests="5" errors="0" skipped="1" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="za.ac.cput.AdpAssignment1.HorseTest" time="4.946" tests="5" errors="0" skipped="1" failures="1">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ZA"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.10\bin"/>
-    <property name="sun.java.command" value="C:\Users\tauri\AppData\Local\Temp\surefire10128582045747910158\surefirebooter5226634111362282036.jar C:\Users\tauri\AppData\Local\Temp\surefire10128582045747910158 2021-03-31T10-13-05_874-jvmRun1 surefire295637114275348543tmp surefire_015792417451001815040tmp"/>
+    <property name="sun.java.command" value="C:\Users\tauri\AppData\Local\Temp\surefire8379727729100400262\surefirebooter5649716394467571487.jar C:\Users\tauri\AppData\Local\Temp\surefire8379727729100400262 2021-03-31T10-15-24_775-jvmRun1 surefire6005919337116914343tmp surefire_012158057969269333830tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\tauri\OneDrive\Desktop\adp-assignment\target\test-classes;C:\Users\tauri\OneDrive\Desktop\adp-assignment\target\classes;C:\Users\tauri\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.7.0\junit-jupiter-engine-5.7.0.jar;C:\Users\tauri\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\tauri\.m2\repository\org\junit\platform\junit-platform-engine\1.7.0\junit-platform-engine-1.7.0.jar;C:\Users\tauri\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\tauri\.m2\repository\org\junit\platform\junit-platform-commons\1.7.0\junit-platform-commons-1.7.0.jar;C:\Users\tauri\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.7.0\junit-jupiter-api-5.7.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\tauri\AppData\Local\Temp\surefire10128582045747910158\surefirebooter5226634111362282036.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\tauri\AppData\Local\Temp\surefire8379727729100400262\surefirebooter5649716394467571487.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.10+8-LTS-162"/>
@@ -61,7 +61,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="testTimeout" classname="za.ac.cput.AdpAssignment1.HorseTest" time="4.929"/>
+  <testcase name="testTimeout" classname="za.ac.cput.AdpAssignment1.HorseTest" time="4.94"/>
   <testcase name="testFailing" classname="za.ac.cput.AdpAssignment1.HorseTest" time="0">
     <failure message=" Failed!!!!!!!!!!!" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError:  Failed!!!!!!!!!!!
 	at za.ac.cput.AdpAssignment1.HorseTest.testFailing(HorseTest.java:48)
