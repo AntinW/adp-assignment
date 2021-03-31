@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+Test set: za.ac.cput.AdpAssignment1.StudentTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 0, Skipped: 1, Time elapsed: 4.806 s <<< FAILURE! - in za.ac.cput.AdpAssignment1.StudentTest
+testFail  Time elapsed: 0.005 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: This test fails because this test fails
+	at za.ac.cput.AdpAssignment1.StudentTest.testFail(StudentTest.java:30)
+
+testEquality  Time elapsed: 0.005 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+expected: za.ac.cput.AdpAssignment1.Student@49dc7102<Student{
+studName = null
+studNum = 0}> but was: za.ac.cput.AdpAssignment1.Student@6b8ca3c8<Student{
+studName = null
+studNum = 0}>
+	at za.ac.cput.AdpAssignment1.StudentTest.testEquality(StudentTest.java:20)
+
