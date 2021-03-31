@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="AdpAssignment1" />
+        <module name="adp-assignment" />
       </profile>
     </annotationProcessing>
   </component>
