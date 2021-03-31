@@ -42,21 +42,21 @@ class AppTest_New
     }
 
     @Test
-    public static void failingTest()
+    void failingTest()
     {
         fail("Failing test");
     }
 
     @Test
     @Timeout(100)
-    public void testTimeout()
+    void testTimeout()
     {
         assertNotSame(app_old, app_new);
     }
 
     @Disabled
     @Test
-    public void disablingTest()
+    void disablingTest()
     {
         assertNull(app_old);
     }
