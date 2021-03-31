@@ -33,7 +33,7 @@ class StudentTest {
     @Test
     @Timeout(6)
     public void testTimeout() throws InterruptedException{
-        Thread.sleep(200);
+        Thread.sleep(5000);
         System.out.println(student1.toString());
     }
 
