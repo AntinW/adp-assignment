@@ -1,9 +1,12 @@
 package za.ac.cput.AdpAssignment1;
 
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.RepeatedTest;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
+
 import static org.junit.jupiter.api.Assertions.*;
+
 
 class DVDTest {
     private DVD dvd0;
@@ -29,7 +32,8 @@ class DVDTest {
 
     //Testing for identity of DVD objects, dvd1 identical to dv2 while dvd1 and dvd0 || dvd2 and dvd0 not.
     @Test
-    void testIdentity() {
+    void testIdentity()
+    {
         assertSame(dvd1, dvd2);
     }
 
@@ -44,11 +48,23 @@ class DVDTest {
         }
     }
 
-//    @Test (timeout = 1000)
-//    void testTimeout(){
-//        int maxNum = 2000;
-//
-//    }
+
+    @Test
+    @Timeout(2000)
+         void testTimeout(){
+        int maxNum = 5;
+        for (int i = 5; i <= maxNum; i++){
+            System.out.println("Time out");
+        }
+    }
+
+    @Disabled
+    @Test
+    void disableMethod(){
+        testIdentity();
+        System.out.println();
+    }
+
 
 
 
