@@ -60,18 +60,16 @@ public class Horse {
         this.color = color;
     }
 
-    public void setAge(int age)
-    {
+
+    public void setAge(int age) {
         this.age = age;
     }
 
-    public void setWeight(double weight)
-    {
+    public void setWeight(double weight) {
         this.weight = weight;
     }
 
-    public void setHeight(double height)
-    {
+    public void setHeight(double height) {
         this.height = height;
     }
 
