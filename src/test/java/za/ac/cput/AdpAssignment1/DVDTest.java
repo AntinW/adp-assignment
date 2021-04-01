@@ -7,24 +7,25 @@ import org.junit.jupiter.api.Timeout;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+//@Disabled("No network")
+public class DVDTest {
 
-class DVDTest {
-    private DVD dvd0;
-    private DVD dvd1;
-    private DVD dvd2;
+      private DVD dvd0;
+      private DVD dvd1;
+      private DVD dvd2;
 
 
     @BeforeEach
-    void setUp() {
+   public void setUp() {
          dvd0 = new DVD();
          dvd1 = new DVD();
          dvd2 =  dvd1;
     }
 
     //Testing for equality of object DVD and found tha dvd1 == dvd2
-    //while dvd1 not == dvd0 , if i remove the comments in line num 26 the method fails
+    //while dvd1 not == dvd0 , if i remove the comments in line num 29(assertEquals(method) the method fails
     @Test
-    void testEquality() {
+    public void testEquality() {
         assertEquals(dvd1, dvd2);
         //assertEquals(dvd1, dvd0);
 
@@ -32,16 +33,15 @@ class DVDTest {
 
     //Testing for identity of DVD objects, dvd1 identical to dv2 while dvd1 and dvd0 || dvd2 and dvd0 not.
     @Test
-    void testIdentity()
+    public void testIdentity()
     {
         assertSame(dvd1, dvd2);
     }
-
-    // Testing the unit to fail unless you comment out line 40
+    // Testing the unit to fail unless you comment out line 44(fail method)
     @Test
     void failTest(){
         try{
-           fail("Test is failing");
+           //fail("Test is failing");
             } catch (Exception e) {
             e.printStackTrace();
             assertTrue(true);
@@ -49,26 +49,40 @@ class DVDTest {
     }
 
 
-    @Test
-    @Timeout(2000)
-         void testTimeout(){
-        int maxNum = 5;
-        for (int i = 5; i <= maxNum; i++){
-            System.out.println("Time out");
+    @Timeout(3)
+     public void testTimeout(){
+        int maxNum = 200000;
+        for (int i = 1; i <= maxNum; i ++){
+                System.out.println("Run for your life");
+            }
         }
-    }
 
-    @Disabled
+
+    @Disabled("No network")
     @Test
-    void disableMethod(){
-        testIdentity();
-        System.out.println();
+    void disableTru() {
+
+        System.out.println("Horror");
     }
-
-
-
-
 
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
