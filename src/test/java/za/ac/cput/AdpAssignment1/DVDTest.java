@@ -49,20 +49,21 @@ public class DVDTest {
     }
 
 
+    @Test
     @Timeout(3)
-     public void testTimeout(){
+    void testTimeout() {
         int maxNum = 200000;
         for (int i = 1; i <= maxNum; i ++){
-                System.out.println("Run for your life");
-            }
+            System.out.println("Run for your life");
         }
 
+    }
 
     @Disabled("No network")
     @Test
     void disableTru() {
 
-        System.out.println("Horror");
+        System.out.println("No net work for now");
     }
 
 
